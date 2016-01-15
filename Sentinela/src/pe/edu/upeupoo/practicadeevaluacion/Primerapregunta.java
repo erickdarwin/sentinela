@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Primerapregunta {
 	
 public static void main(String[] args) {
-}public String calcIMC(double peso, double altura){
+
 	Scanner scan = new Scanner(System.in);
 
 	
