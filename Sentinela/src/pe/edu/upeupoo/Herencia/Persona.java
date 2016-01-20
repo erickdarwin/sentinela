@@ -5,6 +5,8 @@ import java.util.Date;
 
 public class Persona {
 	
+		
+	
 	String nombres;
 	String apePaterno;
 	String apeMaterno;
@@ -26,5 +28,10 @@ public class Persona {
 				+ email + ", tipoSangre=" + tipoSangre + ", direccion=" + direccion + ", religion=" + religion
 				+ ", sexo=" + sexo + ", estadoCivil=" + estadoCivil + ", vive=" + vive + "]";
 	}
-
+	
+	
+	
 }
+	}
+
+
