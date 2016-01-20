@@ -1,45 +1,58 @@
 package pe.edu.upeupoo.clase2;
 
-import javax.crypto.Mac;
 
-import pe.edu.upeu.poo.clase2.Repaso;
-import sun.font.TrueTypeFont;
-import sun.nio.cs.ext.MacThai;
 
 public class Repaso {
 
 	public static void main(String[] args) {
 	 
 		
-		double masacorporal =new masal();
-		double a=25;
-		double b=144;
-		double peso= 65,altura=1.65;
+		Repaso r = new Repaso();
+
+		int a = 25;
+		int b = 144;
 
 		/**
-		 * suma +
+		 * Suma + Resta
+		 *  - Multiplicacion 
+		 * * Division 
+		 * / Modulo
+		 *  % Clase para ayuda
+		 * Matematica "Math"
 		 */
+
 		
-		
-		
-		System.out.println(a+b); //sirve para imprimir en la consola
-		System.out.println();
-	
-	
-	
-	/**
-	 * and &&
-	 * on ||
-	 * negacion !
-	 */
-	
+		System.out.println("La suma es: " + r.sumar(a, b));// Esta instruccion me sirve para imprimir en la consola
+
+		System.out.println("Operaciones Logicas");
+
+		/**
+		 * And && Or || Alt + 124 Negacion !
+		 */
+
 		System.out.println(!true);
-	
-	
+
+		System.out.println("Calculando el IGV");
+		System.out.println("IGV: " + r.calcIGV(100));
+
+		System.out.println("Calculando el IMC:");
+		System.out.println("Su IMC es: " + r.calcIMC(85, 1.72));
+
 	}
-	
-public double imc(double peso, double altura){
-	return peso/Math.pow(altura,2);
-	
-}
+
+	public int sumar(int sum1, int sum2) {
+
+		return sum1 + sum2;
+	}
+
+	public double calcIGV(double monto) {
+		double igv = 18;
+
+		return monto * igv / 100;
+	}
+
+	public double calcIMC(double peso, double altura) {
+		return peso / Math.pow(altura, 2);
+	}
+
 }
