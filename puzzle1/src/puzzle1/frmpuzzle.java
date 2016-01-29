@@ -174,7 +174,7 @@ public class frmpuzzle extends javax.swing.JFrame {
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
         // TODO add your handling code here:if(btn8.isVisible()==false){
-        if(btn);
+        if(btn2);
         btn3.setText(btn2.getText());
         btn2.setVisible(false);
         btn3.setVisible(true);
