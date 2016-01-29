@@ -46,9 +46,19 @@ public class frmpuzzle extends javax.swing.JFrame {
         getContentPane().setLayout(new java.awt.GridLayout(3, 3));
 
         tbn1.setText("1");
+        tbn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tbn1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(tbn1);
 
         btn2.setText("2");
+        btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn2);
 
         btn3.setText("3");
@@ -66,15 +76,30 @@ public class frmpuzzle extends javax.swing.JFrame {
         getContentPane().add(btn5);
 
         btn6.setText("6");
+        btn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn6ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn6);
 
         btn7.setText("7");
         getContentPane().add(btn7);
 
         btn8.setText("8");
+        btn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn8ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn8);
 
         btn9.setText("9");
+        btn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn9ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn9);
 
         pack();
@@ -82,7 +107,77 @@ public class frmpuzzle extends javax.swing.JFrame {
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
         // TODO add your handling code here:
+        if(btn6.isVisible()==false){
+            btn6.setText(btn3.getText());
+            btn3.setVisible(false);
+            btn6.setVisible(true);
+        }
+        if(btn2.isVisible()==false){
+         btn2.setText(btn3.getText());
+        btn3.setVisible(false);
+        btn2.setVisible(true);
+        }
     }//GEN-LAST:event_btn3ActionPerformed
+
+    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+
+        // TODO add your handling code here:
+        if(btn9.isVisible()==false){
+       btn9.setText(btn6.getText());
+      btn6.setVisible(false);
+      btn9.setVisible(true);
+    }
+       if(btn3.isVisible()==false){
+            btn3.setText(btn6.getText());
+            btn6.setVisible(false);
+            btn3.setVisible(true);
+    }
+    }//GEN-LAST:event_btn6ActionPerformed
+      
+    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+
+        
+        
+             // TODO add your handling code here:
+       btn9.setText(btn8.getText());
+       btn8.setVisible(false);
+       btn9.setVisible(true);
+    }//GEN-LAST:event_btn8ActionPerformed
+
+    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+        // TODO add your handling code here:
+          if(btn6.isVisible()==false){
+        btn6.setText(btn9.getText());
+        btn9.setVisible(false);
+        btn6.setVisible(true);
+        }
+        if(btn8.isVisible()==false){
+        btn8.setText(btn9.getText());
+        btn9.setVisible(false);
+        btn8.setVisible(true);
+        }
+    }//GEN-LAST:event_btn9ActionPerformed
+
+    private void tbn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbn1ActionPerformed
+        // TODO add your handling code here:
+        if(btn2.isVisible()==false){
+        btn2.setText(tbn1.getText());
+        tbn1.setVisible(false);
+        btn2.setVisible(true);
+        }
+        if(btn4.isVisible()==false){
+        btn4.setText(tbn1.getText());
+        tbn1.setVisible(false);
+        btn4.setVisible(true);
+        }
+    }//GEN-LAST:event_tbn1ActionPerformed
+
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+        // TODO add your handling code here:if(btn8.isVisible()==false){
+        btn3.setText(btn2.getText());
+        btn2.setVisible(false);
+        btn3.setVisible(true);
+    }//GEN-LAST:event_btn2ActionPerformed
 
     /**
      * @param args the command line arguments
