@@ -32,7 +32,7 @@ public class frmpuzzle extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        tbn1 = new javax.swing.JButton();
+        btn1 = new javax.swing.JButton();
         btn2 = new javax.swing.JButton();
         btn3 = new javax.swing.JButton();
         btn4 = new javax.swing.JButton();
@@ -45,13 +45,13 @@ public class frmpuzzle extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.GridLayout(3, 3));
 
-        tbn1.setText("1");
-        tbn1.addActionListener(new java.awt.event.ActionListener() {
+        btn1.setText("1");
+        btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tbn1ActionPerformed(evt);
+                btn1ActionPerformed(evt);
             }
         });
-        getContentPane().add(tbn1);
+        getContentPane().add(btn1);
 
         btn2.setText("2");
         btn2.addActionListener(new java.awt.event.ActionListener() {
@@ -70,9 +70,19 @@ public class frmpuzzle extends javax.swing.JFrame {
         getContentPane().add(btn3);
 
         btn4.setText("4");
+        btn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn4);
 
         btn5.setText("5");
+        btn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn5);
 
         btn6.setText("6");
@@ -84,6 +94,11 @@ public class frmpuzzle extends javax.swing.JFrame {
         getContentPane().add(btn6);
 
         btn7.setText("7");
+        btn7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn7ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn7);
 
         btn8.setText("8");
@@ -132,6 +147,11 @@ public class frmpuzzle extends javax.swing.JFrame {
             btn6.setVisible(false);
             btn3.setVisible(true);
     }
+       if(btn5.isVisible()==false){
+       btn5.setText(btn6.getText());
+       btn6.setVisible(false);
+       btn5.setVisible(true);
+       }
     }//GEN-LAST:event_btn6ActionPerformed
       
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
@@ -139,9 +159,22 @@ public class frmpuzzle extends javax.swing.JFrame {
         
         
              // TODO add your handling code here:
-       btn9.setText(btn8.getText());
-       btn8.setVisible(false);
-       btn9.setVisible(true);
+        if(btn9.isVisible()==false){
+            btn9.setText(btn8.getText());
+            btn8.setVisible(false);
+            btn9.setVisible(true);
+        }
+        if(btn7.isVisible()==false){
+        btn7.setText(btn8.getText());
+        btn8.setVisible(false);
+        btn7.setVisible(true);
+        }
+        if(btn5.isVisible()==false){
+        btn5.setText(btn8.getText());
+        btn8.setVisible(false);
+        btn5.setVisible(true);
+               
+        }
     }//GEN-LAST:event_btn8ActionPerformed
 
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
@@ -158,32 +191,98 @@ public class frmpuzzle extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btn9ActionPerformed
 
-    private void tbn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbn1ActionPerformed
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
         // TODO add your handling code here:
         if(btn2.isVisible()==false){
-        btn2.setText(tbn1.getText());
-        tbn1.setVisible(false);
+        btn2.setText(btn1.getText());
+        btn1.setVisible(false);
         btn2.setVisible(true);
         }
         if(btn4.isVisible()==false){
-        btn4.setText(tbn1.getText());
-        tbn1.setVisible(false);
+        btn4.setText(btn1.getText());
+        btn1.setVisible(false);
         btn4.setVisible(true);
         }
-    }//GEN-LAST:event_tbn1ActionPerformed
+    }//GEN-LAST:event_btn1ActionPerformed
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
         // TODO add your handling code here:if(btn8.isVisible()==false){
-        if(btn2);
-        btn3.setText(btn2.getText());
-        btn2.setVisible(false);
-        btn3.setVisible(true);
-        if(btn3.isVisible()==false){
-            btn3.setText(btn6.getText());
-            btn6.setVisible(false);
-            btn3.setVisible(true);
-    }
+       
+       if(btn3.isVisible()==false){
+       btn3.setText(btn2.getText());
+       btn2.setVisible(false);
+       btn3.setVisible(true);
+       }
+       if(btn1.isVisible()==false){
+       btn1.setText(btn2.getText());
+       btn2.setVisible(false);
+       btn1.setVisible(true);
+       }
+       if(btn5.isVisible()==false){
+       btn5.setText(btn2.getText());
+       btn2.setVisible(false);
+       btn5.setVisible(true);
+       }
     }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
+        // TODO add your handling code here:
+        if(btn8.isVisible()==false){
+        btn8.setText(btn7.getText());
+        btn7.setVisible(false);
+        btn8.setVisible(true);
+        }
+        if(btn4.isVisible()==false){
+        btn4.setText(btn7.getText());
+        btn7.setVisible(false);
+        btn4.setVisible(true);
+        }
+    }//GEN-LAST:event_btn7ActionPerformed
+
+    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+        // TODO add your handling code here:
+        if(btn7.isVisible()==false){
+        btn7.setText(btn4.getText());
+        btn4.setVisible(false);
+        btn7.setVisible(true);
+        }
+        if(btn1.isVisible()==false){
+        btn1.setText(btn4.getText());
+        btn4.setVisible(false);
+        btn1.setVisible(true);
+        }
+        if(btn5.isVisible()==false){
+        btn5.setText(btn4.getText());
+        btn4.setVisible(false);
+        btn5.setVisible(true);
+        }
+        
+    }//GEN-LAST:event_btn4ActionPerformed
+
+    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+        // TODO add your handling code here:
+        if(btn6.isVisible()==false){
+        btn6.setText(btn5.getText());
+        btn5.setVisible(false);
+        btn6.setVisible(true);
+        }
+        if(btn8.isVisible()==false){
+        btn8.setText(btn5.getText());
+        btn5.setVisible(false);
+        btn8.setVisible(true);
+        }
+        if(btn4.isVisible()==false){
+        btn4.setText(btn5.getText());
+        btn5.setVisible(false);
+        btn4.setVisible(true);
+        }
+        if(btn2.isVisible()==false){
+        btn2.setText(btn5.getText());
+        btn5.setVisible(false);
+        btn2.setVisible(true);
+               
+        }
+    }//GEN-LAST:event_btn5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -191,6 +290,7 @@ public class frmpuzzle extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn1;
     private javax.swing.JButton btn2;
     private javax.swing.JButton btn3;
     private javax.swing.JButton btn4;
@@ -199,6 +299,5 @@ public class frmpuzzle extends javax.swing.JFrame {
     private javax.swing.JButton btn7;
     private javax.swing.JButton btn8;
     private javax.swing.JButton btn9;
-    private javax.swing.JButton tbn1;
     // End of variables declaration//GEN-END:variables
 }
